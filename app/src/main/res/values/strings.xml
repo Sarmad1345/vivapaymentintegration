@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">vivapaymentintegration</string>
+    <string name="payment_made_successfully">Payment made Successfully</string>
+    <string name="a_problem_has_occurred">A Problem has Occurred</string>
+    <string name="invalid_card">Invalid Card</string>
+    <string name="enter_the_valid_card">Enter the Valid Card</string>
+    <string name="enter_the_amount">Enter the Amount</string>
+    <string name="pay">Pay</string>
+</resources>

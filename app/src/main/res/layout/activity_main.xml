@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+  <!-- Step 1: Select Payment Amount -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Select Payment Amount" />
+
+  <RadioGroup
+      android:id="@+id/radioGroupPayment"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/radioButton_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€10" />
+
+    <RadioButton
+        android:id="@+id/radioButton_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€20" />
+
+    <RadioButton
+        android:id="@+id/radioButton_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€50" />
+  </RadioGroup>
+
+  <Button
+      android:id="@+id/btn_select_payment"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Next" />
+
+  <!-- Step 2: Card Input Form (Initially hidden) -->
+  <com.braintreepayments.cardform.view.CardForm
+      android:id="@+id/card_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone" />
+
+  <Button
+      android:id="@+id/btn_pay"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Pay"
+      android:visibility="gone" />
+</LinearLayout>
