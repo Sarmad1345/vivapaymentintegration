@@ -19,20 +19,24 @@
         android:theme="@style/Theme.Vivapaymentintegration"
         tools:targetApi="31">
 
-        <activity
-            android:name=".paymentScreen"
-            android:exported="true"/><!-- Changed to true for launcher activity -->
-
 
         <activity
-            android:name=".invalidCard"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name="com.example.vivapaymentintegration.MainActivity"
+            android:label="Payment Result"
+            android:exported="true"
+
+
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.example.URLResponseActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="mycallbackscheme"
+                    android:host="result"/>
+
             </intent-filter>
         </activity>
     </application>

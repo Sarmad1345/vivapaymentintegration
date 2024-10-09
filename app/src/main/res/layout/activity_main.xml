@@ -4,7 +4,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-  <!-- Step 1: Select Payment Amount -->
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -40,7 +39,6 @@
       android:layout_height="wrap_content"
       android:text="Next" />
 
-  <!-- Step 2: Card Input Form (Initially hidden) -->
   <com.braintreepayments.cardform.view.CardForm
       android:id="@+id/card_form"
       android:layout_width="match_parent"
